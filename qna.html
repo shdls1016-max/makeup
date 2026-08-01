@@ -125,11 +125,30 @@ body{background:#fff;color:var(--color-main)}
 .shop-look{background:#FFF7C9}.promotions{background:#fff}.home-reviews{background:#FFF0E6}.home-review{background:rgba(255,255,255,.82);border-color:rgba(238,161,137,.28)}.home-review img{object-fit:cover;background:transparent}.home-review-grid,.review-swiper{background:transparent}
 @media(max-width:1000px){.category-menu{justify-content:flex-start;overflow-x:auto;gap:28px}.category-menu a{min-width:82px}.ranking-grid{grid-template-columns:1fr;gap:0}.rank-card,.rank-card:first-child{grid-template-columns:48px 142px minmax(0,1fr)}.rank-card:nth-child(2){border-top:1px solid var(--color-line)}}
 @media(max-width:640px){.category-menu-section{padding:14px 0 4px}.category-menu{gap:22px}.category-menu a{min-width:68px;padding:0;font-size:11px}.category-bg{width:64px;height:64px;flex-basis:64px}.ranking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 10px}.rank-card,.rank-card:first-child{display:block;padding:0;border:0}.rank-card:nth-child(-n+2){border-top:0}.rank-card>.rank-index{font-size:22px;margin:0 0 8px}.rank-card:first-child .rank-thumb,.rank-thumb{aspect-ratio:1}.rank-card .rank-info,.rank-card:first-child .rank-info{padding-top:12px}.rank-card .rank-info h3,.rank-card:first-child .rank-info h3{font-size:14px;margin-bottom:8px}.home-review img{object-fit:cover}}
+
+/* Horizontal ranking cards and clean social grid */
+.ranking-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:none;gap:28px 20px}
+.rank-card,.rank-card:first-child{display:block;position:relative;padding:0;border:0;grid-row:auto}
+.rank-card:first-child .rank-thumb,.rank-thumb{position:relative;aspect-ratio:1;border-radius:var(--radius);overflow:hidden;background:#f7f5f4}
+.rank-thumb img{width:100%;height:100%;object-fit:cover}
+.rank-card .rank-index,.rank-card:first-child .rank-index{position:absolute;z-index:4;top:14px;left:14px;display:inline-flex;width:auto;height:28px;margin:0;padding:0 11px;align-items:center;border-radius:999px;background:var(--point);color:#fff;font:800 12px/1 var(--font-en);letter-spacing:.04em}
+.rank-wish{top:auto;right:14px;bottom:14px;width:46px;height:46px;background:rgba(255,255,255,.94);color:var(--point)}
+.rank-card .rank-info,.rank-card:first-child .rank-info{padding:18px 0 0}
+.rank-info .eng{display:block;margin-bottom:7px;color:var(--color-muted);font:800 12px/1.35 var(--font-en);letter-spacing:.04em}
+.rank-card .rank-info h3,.rank-card:first-child .rank-info h3{margin:0 0 18px;font-size:16px;line-height:1.45}
+.rank-card .rank-info .price{font-size:17px}
+.instagram-section{padding:var(--section-gap) var(--gutter);background:#fff}
+.instagram-head{max-width:var(--container);margin:0 auto 40px}
+.insta-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:auto;gap:10px;max-width:var(--container);margin:0 auto}
+.insta-tile,.insta-tile:nth-child(n){grid-column:auto;grid-row:auto;aspect-ratio:1;border-radius:var(--radius);background:transparent}
+.insta-tile img,.insta-tile:nth-child(n) img{width:100%;height:100%;object-fit:cover!important;background:transparent!important}
+@media(max-width:1000px){.ranking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 16px}.insta-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){.ranking-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 10px}.rank-card .rank-index,.rank-card:first-child .rank-index{top:10px;left:10px;height:25px;padding:0 9px;font-size:11px}.rank-wish{right:10px;bottom:10px;width:38px;height:38px}.rank-card .rank-info,.rank-card:first-child .rank-info{padding-top:13px}.rank-info .eng{font-size:10px}.rank-card .rank-info h3,.rank-card:first-child .rank-info h3{font-size:14px;margin-bottom:10px}.instagram-section{padding-inline:var(--gutter)}.insta-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}}
 </style></head><body>
 <div class="topbar">NEW MEMBER 15% OFF · 오늘 가입하고 첫 컬러를 만나보세요</div>
 <header class="site-header"><div class="container header-inner">
   <a class="logo" href="index.html">VELUNE<span>.</span></a>
-  <nav class="gnb" aria-label="주 메뉴"><a href="products.html">SHOP</a><a href="products.html#lip">LIP</a><a href="products.html#face">FACE</a><a href="products.html#eye">EYE</a><a href="index.html#lookbook">LOOKBOOK</a><a href="notice.html">COMMUNITY</a></nav>
+  <nav class="gnb" aria-label="주 메뉴"><a href="products.html#base">BASE</a><a href="products.html#eye">EYE</a><a href="products.html#cheek">CHEEK</a><a href="products.html#lip">LIP</a><a href="products.html#tool">TOOL</a><a href="index.html#lookbook">LOOKBOOK</a><a href="notice.html">COMMUNITY</a></nav>
   <div class="utility"><a href="login.html">LOGIN</a><a href="signup.html">JOIN</a><a class="bag" href="cart.html">BAG<span class="count">2</span></a></div>
   <button class="mobile-toggle" type="button" aria-label="메뉴 열기">☰</button>
 </div></header><main class="sub-main"><div class="container"><div class="page-head"><span class="eyebrow">We are here</span><h1>Q&A</h1><p>상품, 주문, 배송에 대해 무엇이든 문의하세요.</p></div><div class="board-tools"><select class="option-select" style="width:150px"><option>전체 문의</option><option>상품 문의</option><option>배송 문의</option></select><input placeholder="검색어를 입력하세요"><button class="btn">SEARCH</button><button class="btn primary">WRITE</button></div><table class="board-table"><thead><tr><th>번호</th><th>분류 / 제목</th><th>작성자</th><th>날짜</th><th>상태</th></tr></thead><tbody><tr><td>36</td><td><a href="#">상품 / 베리 드롭 재입고 일정</a></td><td>kim***</td><td>2026.07.21</td><td><span class="badge" style="position:static">답변완료</span></td></tr><tr><td>35</td><td><a href="#">배송 / 오늘 주문하면 언제 출고되나요?</a></td><td>seo***</td><td>2026.07.20</td><td>답변대기</td></tr><tr><td>34</td><td><a href="#">상품 / 21N 컬러 비교 문의</a></td><td>lee***</td><td>2026.07.19</td><td><span class="badge" style="position:static">답변완료</span></td></tr><tr><td>33</td><td><a href="#">기타 / 선물 포장 가능 여부</a></td><td>par***</td><td>2026.07.18</td><td><span class="badge" style="position:static">답변완료</span></td></tr><tr><td>32</td><td><a href="#">교환 / 옵션 변경하고 싶어요</a></td><td>cho***</td><td>2026.07.17</td><td><span class="badge" style="position:static">답변완료</span></td></tr></tbody></table><nav class="pagination"><a class="active">1</a><a>2</a><a>3</a><a>→</a></nav></div></main>
